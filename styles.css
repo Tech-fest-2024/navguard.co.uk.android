@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: #002042;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the contents horizontally */
+    position: relative;
+    box-shadow: 0 29px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+#logo {
+    height: 40px; /* Adjust as needed */
+    position: absolute;
+    left: 1rem; /* Space between the logo and the left edge */
+}
+
+#search {
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #007bff; /* Border color matching theme */
+    border-radius: 24px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    margin-left: auto; /* Pushes search bar to the center */
+    margin-right: auto; /* Centers search bar */
+}
+
+#search:focus {
+    border-color: #0056b3; /* Darker border color on focus */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Enhance shadow on focus */
+}
+
+header button {
+    background-color: #00346c;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+header button#emergency {
+    background-color: #FF0000;
+}
+
+header button#emergency:hover {
+    background-color: #cc0000;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin: 20px;
+}
+
+#map {
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#crime-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space between map and crime info */
+    height: 30vh; /* Adjust height as needed */
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+#crime-info h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #004186;
+}
+
+#crime-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#crime-info li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+#crime-info li:last-child {
+    border-bottom: none;
+}
+
+#crime-info li strong {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.neighborhood-marker div {
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+    border-radius: 10px;
+    color: #170303;
+    font-weight: bold;
+}

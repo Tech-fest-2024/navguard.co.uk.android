@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Crime Avoidance</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="styles.css" /> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.png" alt="Logo">
+        <button id="get-directions">Get Directions</button>
+        <button id="emergency">Emergency</button>
+    </header>
+    <div id="main-content">
+        <div id="map"></div>
+        <div id="crime-info">
+            <h2>Crime Information</h2>
+            <ul id="crime-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="app.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
